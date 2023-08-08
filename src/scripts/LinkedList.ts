@@ -31,8 +31,6 @@ class LinkedList<T> implements ILinkedList<T> {
     public append(value: T) {
       const newNode = {
         value,
-        next: null,
-        prev: null,
       } as ListNode<T>;
 
       if (!this.head) {
@@ -50,10 +48,8 @@ class LinkedList<T> implements ILinkedList<T> {
     }
 
     public prepend(value: T) {
-      const newNode = {
+      const newNode: ListNode<T> = {
         value,
-        next: null,
-        prev: null,
       } as ListNode<T>;
 
       if (!this.head) {
@@ -69,8 +65,6 @@ class LinkedList<T> implements ILinkedList<T> {
     public insert(value: T, index: number) {
       const newNode = {
         value,
-        next: null,
-        prev: null,
       } as ListNode<T>;
 
       if (!this.head) {
