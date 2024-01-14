@@ -8,12 +8,6 @@
 // 6. search
 // 7. get head/tail
 
-type ListNode<T> = {
-  value: T;
-  next: ListNode<T> | null;
-  prev: ListNode<T> | null;
-}
-
 interface ILinkedList<T> {
   append: (value: T) => void;
   prepend: (value: T) => void;
